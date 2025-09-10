@@ -1,0 +1,34 @@
+# EditorConfig helps maintain consistent coding styles between editors and IDEs
+root = true
+
+# Default settings for all files
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Snakefile (main workflow)
+[Snakefile]
+indent_style = space
+indent_size = 4
+
+# Snakemake module files (*.smk)
+[*.smk]
+indent_style = space
+indent_size = 4
+
+# Python files
+[*.py]
+indent_style = space
+indent_size = 4
+
+# yaml files
+[*.yaml]
+indent_style = space
+indent_size = 2
+
+# bash and slurm files
+[*.{sh,sl}]
+indent_style = space
+indent_size = 4
