@@ -85,7 +85,7 @@ def main(args: argparse.Namespace):
     total_tokens = args.batch_size*(args.input_len + args.input_len)
     throughput =  total_tokens/latency
 
-    power_profile = gpuPowerProbe(interval=0.25, gpu_id=0)
+    power_profile = gpuPowerProbe(interval=0.25, num_gpus=args.tensor_parallel_size)
 
     time.sleep(1)
     power_profile.start()
